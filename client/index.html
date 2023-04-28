@@ -2,12 +2,52 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>FiaNerd | Profile</title>
   </head>
-  <body>
-    <div id="app"></div>
+  <body class="bg-black lg:pb-10 lg:px-10 ">
+    <div
+      id="app"
+      class="flex h-full flex-col max-w-920 mx-auto bg-dark lg:max-w-1070"
+    >
+
+    <section
+    class="hero-section grid gap-y-10  w-full h-96 bg-hero bg-cover bg-center flex justify-center items-center px-7 md:grid-cols-2 md:divide-x-40 md:gap-x-12  xs:h-480 sm:h-640 md:h-768 md:object-cover md:bg-hero-md lg:bg-hero-lg xl:bg-hero-xl"
+  >
+      
+        <div
+          class="flex flex-col justify-center items-center mt-44 sm:mt-80 xl:mt-auto w-full"
+        >
+          <h1
+            class="text-center text-title-mobile text-white font-bold drop-shadow-lg xs:text-title-xs sm:text-title-md lg:text-title-lg "
+          >
+            WELCOME TO
+            <span>WELCOME TO MY SITE</span>
+          </h1>
+          <p
+            class="mt-5 text-center text-white opacity-70 sm:text-sub-title xl:mt-2 xl:text-title-md"
+          >
+            This webiste is about programming and things like that
+          </p>
+          <a
+            class="mt-8 px-12 py-3 hover:from-amber-600 hover:to-red-700 text-xl text-white/70 font-semibold drop-shadow-lg rounded-full xl:mt-0"
+            href="#"
+            >Get Started</a
+          >
+
+      </div>
+    </section>
+
+    <header id="header-container" class="sticky top-8"></header>
+
+      <main class="bg-dark flex">
+       
+        </main>
+      </main>
+      <footer></footer>
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
