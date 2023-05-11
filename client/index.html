@@ -4,40 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./src/style.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+  />
+  <link rel="stylesheet" href="/src/style.css">
     <title>FiaNerd | Profile</title>
   </head>
-  <body class="bg-black lg:pb-10 lg:px-10 ">
+  <body class="bg-black lg:pb-10 lg:px-10">
     <div
       id="app"
       class="flex h-full flex-col max-w-920 mx-auto bg-dark lg:max-w-1070"
     >
+      <div
+        id="border-container"
+        class="fixed z-50 top-0 left-0 w-full h-16 bg-gray-100 border-b-2"
+      >
+        <p
+          class="bg-gray text-light-gray text-heading font-thin text-center p-2"
+        >
+          [ I'm Creating the Dreams Of My Own Life ]
+        </p>
+      </div>
 
-    <div
-    id="border-container"
-    class="fixed z-50 top-0 left-0 w-full h-16 bg-gray-100 border-b-2"
-  >
-        <p class="bg-gray text-light-gray text-heading font-thin text-center p-2">[ I'm Creating the Dreams Of My Own Life ]</p>
-    </div>
-
-
-
-
-    <section
-    class="hero-section grid gap-y-10  w-full h-96 bg-hero bg-cover bg-center flex justify-center items-center px-7 md:grid-cols-2 md:divide-x-40 md:gap-x-12  xs:h-480 sm:h-640 md:h-768 md:object-cover md:bg-hero-md lg:bg-hero-lg xl:bg-hero-xl"
-  >
-      
+      <section
+        class="hero-section w-full h-96 bg-hero bg-cover bg-center flex justify-center items-center px-7 md:grid-cols-2 md:divide-x-40 md:gap-x-12 xs:h-480 sm:h-640 md:h-768 md:object-cover md:bg-hero-md lg:bg-hero-lg xl:bg-hero-xl"
+      >
         <div
           class="flex flex-col justify-center items-center mt-44 sm:mt-80 xl:mt-auto w-full"
         >
           <h1
-            class="text-center text-title-mobile text-white font-bold drop-shadow-lg xs:text-title-xs sm:text-title-md lg:text-title-lg "
+            class="text-center text-title-mobile text-white font-bold drop-shadow-lg xs:text-title-xs sm:text-title-md lg:text-title-lg"
           >
             WELCOME TO
             <span>WELCOME TO MY SITE</span>
           </h1>
           <p
-            class="mt-5 text-center text-white opacity-70 sm:text-sub-title xl:mt-2 xl:text-title-md"
+            class="text-center text-white opacity-70 sm:text-sub-title xl:mt-2 xl:text-title-md"
           >
             This webiste is about programming and things like that
           </p>
@@ -46,15 +49,146 @@
             href="#"
             >Get Started</a
           >
+        </div>
+      </section>
 
-      </div>
-    </section>
+      <header id="header-container" class="sticky top-8">
+        <div class="header-wrapper h-1/5 bg-dark">
+          <div class="grid grid-cols-2 py-3 mb-10 h-1/5 px-7">
+            <div class="col-start-1 col-end-3">
+              <h1
+                id="logo"
+                class="text-logo font-bold text-golden align-text-bottom"
+              >
+                FiaNerd
+              </h1>
+              <p class="text-sub-title text-white">Sofia Mattiasson</p>
+            </div>
+            <div
+              id="menu-btn"
+              class="col-end-7 col-span-2 relative fixed top-0 left-0 w-full h-full z-10"
+            >
+              <i class="menu fa fa-bars fa-2x text-white mt-10"></i>
+            </div>
+          </div>
+        </div>
+      </header>
 
-    <header id="header-container" class="sticky top-8"></header>
+      <main class="bg-dark">
+        <div class="grid gap-y-10 bg-dark px-7 md:grid-cols-2 md:divide-x-40 md:gap-x-12">
+        <section id="about-me">
+            <h2 class="text-golden text-title-xs font-bold border-b-m-b w-1/2 flex justify-center pb-2 items-center mx-auto md:text-title-s">About me</h2>
+            <p class="text-main-size text-white mt-4">
+                I am at the beginning of a new career, with a basic education in graphic design and production, which I have been working in since 2007. Now is the time to move on with new challenges. I am a driven person who thrives on problem solving. As I have a great interest in both IT and design, it was a given choice to apply for web development within frontend. In my other jobs, I have learned to take my own initiative and solve the problems that come my way. Have a good habit of working independently, but also to cooperate with my colleagues. If you want a creative and curious person who does his utmost to reach the set goals, then I am right for you. What I can't do, I'll learn!
+            </p>x
+        </section>
+    
+        <section>
+            <h2 class="text-golden text-title-xs font-bold border-b-m-b w-1/2 flex justify-center pb-2 items-center mx-auto mb-4 md:text-title-s">My skills</h2>
+    
+           <p class="text-white font-bold mb-2">Language</p>
+            
+           <div class="mb-2"> <span class="text-white">Swedish</span><span class=" text-golden"> ( 100% )</span></div>
+            <div class="w-full bg-light-gray rounded-full h-2 mb-6 dark:bg-gray-700">
+                <div class="bg-golden h-2 rounded-full" style="width: 100%">
+                </div>
+            </div>
+            
+            <div class="mb-2"><span class="text-white">English</span><span class=" text-golden"> ( 95% )</span>
+            </div>
+            <div class="w-full bg-light-gray rounded-full h-2 mb-8 dark:bg-gray-700">
+                <div class="bg-golden h-2 rounded-full" style="width: 95%">
+                </div>
+            </div>
+               
+            <p class="text-white font-bold mb-2">Programming</p>
+                
+            <div class="mb-2"><span class="text-white">C-sharp</span><span class=" text-golden"> ( 70% )</span>
+            </div>
+            <div class="w-full bg-light-gray rounded-full h-2 mb-6 dark:bg-gray-700">
+                <div class="bg-golden h-2 rounded-full" style="width: 70%"></div>
+            </div>
+           
+            <div class="mb-2"><span class="text-white">CSS</span><span class=" text-golden"> ( 80% )</span>
+            </div>
+            <div class="w-full bg-light-gray rounded-full h-2 mb-6 dark:bg-gray-700">
+                <div class="bg-golden h-2 rounded-full" style="width: 80%"></div>
+            </div>
+        
+            <div class="mb-2"><span class="text-white">HTML</span><span class=" text-golden"> ( 80% )</span>
+            </div>
+            <div class="w-full bg-light-gray rounded-full h-2 mb-6 dark:bg-gray-700">
+                <div class="bg-golden h-2 rounded-full" style="width: 80%"></div>
+            </div>
+        
+            <div class="mb-2"><span class="text-white">Tailwind CSS</span>
+                <span class=" text-golden"> ( 60% )</span>
+            </div>
+            <div class="w-full bg-light-gray rounded-full h-2 mb-6 dark:bg-gray-700">
+                <div class="bg-golden h-2 rounded-full" style="width: 60%"></div>
+            </div>
+        
+    
+            <div class="mb-2"><span class="text-white">JavaScript</span>
+                <span class=" text-golden"> ( 70% )</span>
+            </div>
+            <div class="w-full bg-light-gray rounded-full h-2 mb-6 dark:bg-gray-700">
+                 <div class="bg-golden h-2 rounded-full" style="width: 70%"></div>
+            </div>
 
-      <main class="bg-dark flex">
-       
-        </main>
+            <div class="mb-2"><span class="text-white">TypeScript</span>
+                <span class=" text-golden"> ( 75% )</span></div>
+            <div class="w-full bg-light-gray rounded-full h-2 mb-8 dark:bg-gray-700">
+                <div class="bg-golden h-2 rounded-full" style="width: 75%"></div>
+            </div>
+
+            <p class="text-white font-bold mb-2">Program</p>
+    
+            <div class="mb-2"><span class="text-white">MySql / SQL server</span><span class=" text-golden"> ( 80% )</span></div>
+            <div class="w-full bg-light-gray rounded-full h-2 mb-6 dark:bg-gray-700">
+            <div class="bg-golden h-2 rounded-full" style="width: 80%"></div></div>
+    
+            <div class="mb-2">
+                <span class="text-white">MongoDB</span>
+                <span class=" text-golden"> ( 50% )</span>
+            </div>
+            <div class="w-full bg-light-gray rounded-full h-2 mb-6 dark:bg-gray-700">
+                <div class="bg-golden h-2 rounded-full" style="width: 50%"></div>
+            </div>
+    
+            <div class="mb-2"><span class="text-white">Postman / Insomnia</span>
+                <span class=" text-golden"> ( 90% )</span>
+            </div>
+            <div class="w-full bg-light-gray rounded-full h-2 mb-6 dark:bg-gray-700">
+                <div class="bg-golden h-2 rounded-full" style="width: 90%"></div>
+            </div>
+    
+            <div class="mb-2"><span class="text-white">Photoshop</span>
+                <span class=" text-golden"> ( 90% )</span></div>
+            <div class="w-full bg-light-gray rounded-full h-2 mb-6 dark:bg-gray-700">
+                <div class="bg-golden h-2 rounded-full" style="width: 90%"></div>
+            </div>
+    
+            <div class="mb-2"><span class="text-white">Illustrator</span>
+                <span class=" text-golden"> ( 90% )</span></div>
+            <div class="w-full bg-light-gray rounded-full h-2 mb-6 dark:bg-gray-700">
+                <div class="bg-golden h-2 rounded-full" style="width: 90%"></div>
+            </div>
+    
+            <div class="mb-2"><span class="text-white">Indesign</span>
+                <span class=" text-golden"> ( 85% )</span></div>
+            <div class="w-full bg-light-gray rounded-full h-2 mb-6 dark:bg-gray-700">
+                <div class="bg-golden h-2 rounded-full" style="width: 85%"></div>
+            </div>
+            
+
+            <button onclick="readMore()" id="toggleText" class="flex mx-auto bg-golden py-2 px-6 outline outline-offset-8">Show more</button>
+
+
+            </div>
+        </section>
+    
+        </div>
       </main>
       <footer></footer>
     </div>
